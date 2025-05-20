@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dagwiepoq0drb"]
+
+[ext_resource type="Texture2D" uid="uid://o1r7v6dyl6rw" path="res://icon.svg" id="1_5iefc"]
+[ext_resource type="Script" uid="uid://bnsfdwyd7ouqe" path="res://script/LevelItem.gd" id="2_cbvvj"]
+
+[node name="LevelItem" type="Button"]
+custom_minimum_size = Vector2(100, 100)
+offset_right = 136.0
+offset_bottom = 136.0
+icon = ExtResource("1_5iefc")
+script = ExtResource("2_cbvvj")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
